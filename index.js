@@ -45,23 +45,23 @@ function startGame() {
 //play button's icons
 function button (){  
  BLack = new Image(50, 50);
- BLack.src = 'Black.png';
+ BLack.src = 'Black.jpg';
  BLack.style.borderRadius = "50%";
  BLack.style.left = "40%";
  BLack.style.top = 40 + "%";
  var IMG = img1;
  if (IMG==1){
-   BLack.src = 'First.png';
+   BLack.src = 'First.jpg';
    changeButton.appendChild(BLack);
    console.log('te');
  }
  else if (IMG == 2){
-   BLack.src = 'Second.png';
+   BLack.src = 'Second.jpg';
    changeButton.appendChild(BLack);
    console.log('e');
  }
  else if (IMG ==3){
-  BLack.src = 'Third.png';
+  BLack.src = 'Third.jpg';
   console.log('e');
   changeButton.appendChild(BLack);
  }
@@ -88,7 +88,7 @@ function market(){
 function marketChanger() {
  
   First = new Image(50, 50);
-  First.src = 'First.png';
+  First.src = 'First.jpg';
   First.style.borderRadius = "50%";
   First.style.left = "40%";
   First.style.top = 40 + "%";
@@ -96,12 +96,12 @@ function marketChanger() {
   
  
   Second = new Image(50, 50);
-  Second.src = 'Second.png';
+  Second.src = 'Second.jpg';
   Second.style.borderRadius = "50%";
   document.querySelector('.B-content-second').appendChild(Second);
 
   Third = new Image(50, 50);
-  Third.src = 'Third.png';
+  Third.src = 'Third.jpg';
   Third.style.borderRadius = "50%";
   document.querySelector('.B-content-third').appendChild(Third);
 }
