@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>game</title>
+<link rel="stylesheet" href="ijndex.css">
+<script src="index.js"></script>
+</head>
+<body>
+  <div class = "start" onclick="startGame()">
+    <h2>START</h2>
+  </div>
+  <div class="menu">
+    <h1 class="h1">MENU</h1>
+    <button class="market" onclick="market()">MARKET</button>
+    <button class = "Test-image" onclick="audioVolume()">VOLUME</button>
+  </div>
+  <div class="market-content">
+    <h1 class="market-h1">SHOP</h1>
+    <div class="B-content">
+      <div class="B-content.1" id="B-content-1">
+        <div class="B-content-first B-content-all"></div>
+      <button class="b-content-button" onclick="first()">ok</button>
+      </div>
+    </div>
+    <div class="B-content">
+      <div class="B-content-second B-content-all"></div>
+      <button class="b-content-button" onclick="second()">ok</button>
+    </div>
+    <div class="B-content">
+      <div class="B-content-third B-content-all"></div>
+      <button class="b-content-button" onclick="third()">ok</button>
+    </div>
+    <button class="Back" onclick="marketOut()">Back</button>
+  </div>
+  <div class = "test-image" id="test-image" onclick="audioVolume()">
+    
+  </div>
+  <div class="test">
+    <div class="score test"></div>
+     <div class="timer test" id="Timer"></div>
+    </div>
+    <div class="stage"></div>
+  <div class="button" id="button" onclick="game()"></div>
+  <div class="main-gameover">
+    <h1>Game Over</h1>
+    <div class="BestScore"></div>
+    <div class="Over-score">
+    <div class="Over-Score"></div>
+    </div>
+    <button class="ok" onclick="Restart()">Restart</button>
+  </div>
+</body>
+</html>
