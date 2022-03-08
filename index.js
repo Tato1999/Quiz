@@ -52,21 +52,21 @@ function button (){
  var IMG = img1;
  if (IMG==1){
    BLack.src = 'First.jpg';
-   changeButton.appendChild(BLack);
+   document.querySelector('.button').appendChild(BLack);
    console.log('te');
  }
  else if (IMG == 2){
    BLack.src = 'Second.jpg';
-   changeButton.appendChild(BLack);
+   document.querySelector('.button').appendChild(BLack);
    console.log('e');
  }
  else if (IMG ==3){
   BLack.src = 'Third.jpg';
   console.log('e');
-  changeButton.appendChild(BLack);
+  document.querySelector('.button').appendChild(BLack);
  }
  else {
- changeButton.appendChild(BLack);
+ document.querySelector('.button').appendChild(BLack);
 }
 }
 
