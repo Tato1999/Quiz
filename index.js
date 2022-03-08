@@ -16,6 +16,7 @@ var img1 , img2 = 0, img3 = 0;
 var Volume = 2;
 var posx;
 var posy;
+var changeButton = document.querySelector('.button');
 
 music();
 
@@ -51,21 +52,21 @@ function button (){
  var IMG = img1;
  if (IMG==1){
    BLack.src = 'First.png';
-   document.querySelector('.button').appendChild(BLack);
+   changeButton.appendChild(BLack);
    console.log('te');
  }
  else if (IMG == 2){
    BLack.src = 'Second.png';
-   document.querySelector('.button').appendChild(BLack);
+   changeButton.appendChild(BLack);
    console.log('e');
  }
  else if (IMG ==3){
   BLack.src = 'Third.png';
   console.log('e');
-  document.querySelector('.button').appendChild(BLack);
+  changeButton.appendChild(BLack);
  }
  else {
- document.querySelector('.button').appendChild(BLack);
+ changeButton.appendChild(BLack);
 }
 }
 
