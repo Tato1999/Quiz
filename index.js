@@ -26,7 +26,7 @@ music();
   
   
   
-
+$(document).ready;
 // Start Game button and functions
 function startGame() {
   var Start = document.querySelector('.start');
