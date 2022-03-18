@@ -1,0 +1,113 @@
+#header {
+  position: absolute;
+  width: 722px;
+  height: 66px;
+  top: 2.5%;
+  left: 28%;
+  background-color: rgba(227, 0, 0, 1);
+}
+#headerText {
+  position: absolute;
+  width: 232px;
+  height: 33px;
+  margin-left: 245px;
+  margin-top: 6px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  -webkit-text-stroke: rgb(0, 255, 64) 0.5px;
+  color: #ffb800;
+
+  box-sizing: border-box;
+  text-shadow: 0px 12px 10px yellow;
+}
+#contentMain {
+  position: absolute;
+  width: 523px;
+  height: 526px;
+  left: 35%;
+  top: 15%;
+  background: #b9b9b9;
+}
+#contentQuestion {
+  position: absolute;
+  width: 393px;
+  height: 76px;
+  margin-top: 70px;
+  margin-left: 63px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.answer {
+  position: absolute;
+  width: 303px;
+  height: 33px;
+  background: white;
+  margin-left: 113px;
+  text-align: center;
+}
+#firstAnswer {
+  margin-top: 178px;
+}
+#secondAnswer {
+  margin-top: 230px;
+}
+#thirdAnswer {
+  margin-top: 287px;
+}
+#fourAnswer {
+  margin-top: 346px;
+}
+.inputStyle {
+  width: 22px;
+  height: 23px;
+  margin-left: 89px;
+}
+#radio1 {
+  margin-top: 183px;
+}
+#radio2 {
+  margin-top: 29px;
+}
+#radio3 {
+  margin-top: 34px;
+}
+#radio4 {
+  margin-top: 41px;
+}
+#submitAnswer {
+  position: absolute;
+  width: 393px;
+  height: 54px;
+  top: 424px;
+  left: 63px;
+  background: #f30000;
+  font-size: 32px;
+  border-radius: 10% 55% 10% 55%;
+  cursor: pointer;
+}
+#night-mod-button {
+  width: 70px;
+  border-radius: 10px;
+  position: absolute;
+  height: 66px;
+  left: 15%;
+  top: 20px;
+}
+#pointDivId {
+  position: absolute;
+  border-radius: 10px;
+  left: 80%;
+  height: 66px;
+  width: 70px;
+  background-color: gold;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  top: 20px;
+}
+#pointDivIdIn {
+  padding: 10px;
+}
