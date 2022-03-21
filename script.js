@@ -93,7 +93,6 @@ var QUESTION_LIST = [
   QUESTION9,
   QUESTION10,
 ];
-localStorage.setItem('Quest', QUESTION_LIST);
 var DELETE_QUESTION = false;
 var test = localStorage.getItem('point');
 var test1 = localStorage.getItem('Quest');
@@ -240,8 +239,6 @@ function changeColor1() {
     style1.style.backgroundColor = 'red';
   } else if (CHECK_ANS1) {
     style1.style.backgroundColor = 'green';
-    style2.style.backgroundColor = 'red';
-    style3.style.backgroundColor = 'red';
   }
 }
 function changeColor2() {
@@ -252,8 +249,6 @@ function changeColor2() {
     style2.style.backgroundColor = 'red';
   } else if (CHECK_ANS2) {
     style2.style.backgroundColor = 'green';
-    style1.style.backgroundColor = 'red';
-    style3.style.backgroundColor = 'red';
   }
 }
 function changeColor3() {
@@ -264,8 +259,6 @@ function changeColor3() {
     style3.style.backgroundColor = 'red';
   } else if (CHECK_ANS3) {
     style3.style.backgroundColor = 'green';
-    style1.style.backgroundColor = 'red';
-    style2.style.backgroundColor = 'red';
   }
 }
 var testStop = 0;
@@ -370,3 +363,14 @@ function darkModeClick() {
     darkChanger = true;
   }
 }
+setInterval(nameInner, 100);
+function nameInner() {
+  var nameValueInLocal = localStorage.getItem('name');
+  var nameInDocumet = document.getElementById('nameIn');
+  if (nameValueInLocal != null) {
+    nameInDocumet.innerHTML = 'Name: ' + nameValueInLocal;
+  } else {
+    nameInDocumet.innerHTML = 'First log In';
+  }
+}
+
