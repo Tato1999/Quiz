@@ -225,7 +225,7 @@ h1 {
     animation-timing-function: cubic-bezier(0.1, 0.2, 0.1, 0.1);
   }
 
-  @keyframes start-first {
+  /*@keyframes start-first {
     35% {
       top: -20px;
     }
@@ -235,7 +235,7 @@ h1 {
     100% {
       top: 0px;
     }
-  }
+  }*/
   .text-color {
     color: black;
   }
