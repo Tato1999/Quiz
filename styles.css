@@ -1,113 +1,394 @@
-#header {
-  position: absolute;
-  width: 722px;
-  height: 66px;
-  top: 2.5%;
-  left: 28%;
-  background-color: rgba(227, 0, 0, 1);
+
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
-#headerText {
-  position: absolute;
-  width: 232px;
-  height: 33px;
-  margin-left: 245px;
-  margin-top: 6px;
 
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 45px;
-  text-align: center;
-  -webkit-text-stroke: rgb(0, 255, 64) 0.5px;
-  color: #ffb800;
-
+html {
+  font-size: 62.5%;
   box-sizing: border-box;
-  text-shadow: 0px 12px 10px yellow;
 }
-#contentMain {
-  position: absolute;
-  width: 523px;
-  height: 526px;
-  left: 35%;
-  top: 15%;
-  background: #b9b9b9;
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  /* background-color: #60b347; */
 }
-#contentQuestion {
-  position: absolute;
-  width: 393px;
-  height: 76px;
-  margin-top: 70px;
-  margin-left: 63px;
-  background-color: #ffffff;
+
+/* LAYOUT */
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid #eee;
+}
+main {
+  height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+}
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 4rem;
   text-align: center;
-}
-.answer {
   position: absolute;
-  width: 303px;
-  height: 33px;
-  background: white;
-  margin-left: 113px;
-  text-align: center;
-}
-#firstAnswer {
-  margin-top: 178px;
-}
-#secondAnswer {
-  margin-top: 230px;
-}
-#thirdAnswer {
-  margin-top: 287px;
-}
-#fourAnswer {
-  margin-top: 346px;
-}
-.inputStyle {
-  width: 22px;
-  height: 23px;
-  margin-left: 89px;
-}
-#radio1 {
-  margin-top: 183px;
-}
-#radio2 {
-  margin-top: 29px;
-}
-#radio3 {
-  margin-top: 34px;
-}
-#radio4 {
-  margin-top: 41px;
-}
-#submitAnswer {
-  position: absolute;
-  width: 393px;
-  height: 54px;
-  top: 424px;
-  left: 63px;
-  background: #f30000;
-  font-size: 32px;
-  border-radius: 10% 55% 10% 55%;
-  cursor: pointer;
-}
-#night-mod-button {
-  width: 70px;
-  border-radius: 10px;
-  position: absolute;
-  height: 66px;
-  left: 15%;
-  top: 20px;
-}
-#pointDivId {
-  position: absolute;
-  border-radius: 10px;
-  left: 80%;
-  height: 66px;
-  width: 70px;
-  background-color: gold;
-  color: white;
-  text-align: center;
-  justify-content: center;
-  top: 20px;
-}
-#pointDivIdIn {
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-family: "Press Start 2P", sans-serif;
   padding: 10px;
+  margin-top: 10px;
 }
+#firstH1{
+  top: 30px !important;
+}
+.login {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.quiz {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.jigo {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+#header {
+    position: absolute;
+    width: 722px;
+    height: 66px;
+    top: 2.5%;
+    left: 28%;
+    background-color: rgba(227, 0, 0, 1);
+  }
+  #headerText {
+    position: absolute;
+    width: 232px;
+    height: 33px;
+    margin-left: 245px;
+    margin-top: 6px;
+  
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    -webkit-text-stroke: rgb(0, 255, 64) 0.5px;
+    color: #ffb800;
+  
+    box-sizing: border-box;
+    text-shadow: 0px 12px 10px yellow;
+  }
+  #contentMain {
+    position: absolute;
+    width: 523px;
+    height: 526px;
+    left: 35%;
+    top: 15%;
+    background: #b9b9b9;
+  }
+  #contentQuestion {
+    position: absolute;
+    width: 393px;
+    height: 76px;
+    margin-top: 70px;
+    margin-left: 63px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .answer {
+    position: absolute;
+    width: 303px;
+    height: 33px;
+    background: white;
+    margin-left: 113px;
+    text-align: center;
+  }
+  #firstAnswer {
+    margin-top: 178px;
+  }
+  #secondAnswer {
+    margin-top: 230px;
+  }
+  #thirdAnswer {
+    margin-top: 287px;
+  }
+  #fourAnswer {
+    margin-top: 346px;
+  }
+  .inputStyle {
+    width: 22px;
+    height: 23px;
+    margin-left: 89px;
+  }
+  #radio1 {
+    margin-top: 183px;
+  }
+  #radio2 {
+    margin-top: 29px;
+  }
+  #radio3 {
+    margin-top: 34px;
+  }
+  #radio4 {
+    margin-top: 41px;
+  }
+  #submitAnswer {
+    position: absolute;
+    width: 393px;
+    height: 54px;
+    top: 424px;
+    left: 63px;
+    background: #f30000;
+    font-size: 32px;
+    border-radius: 10% 55% 10% 55%;
+    cursor: pointer;
+  }
+  #night-mod-button {
+    width: 70px;
+    border-radius: 50px;
+    position: absolute;
+    height: 66px;
+    left: 15%;
+    top: 20px;
+  }
+  #pointDivId {
+    position: absolute;
+    border-radius: 10px;
+    left: 80%;
+    height: 66px;
+    width: 70px;
+    background-color: gold;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    top: 20px;
+  }
+  #pointDivIdIn {
+    padding: 10px;
+  }
+  #startDiv{
+    position: absolute;
+    top: 70%;
+    left: 49%;
+  }
+  .start{
+    position: absolute;
+    cursor: pointer;
+    animation-name: start-first;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  #start1 {
+    left: -100px;
+    animation-timing-function: cubic-bezier(0.1,0.2,0.1,0.1);
+  }
+  #start2{
+    left: -50px;
+    animation-timing-function: cubic-bezier(0.1, 0.3, 0.5, 0.5);
+  }
+  #start3{
+    left: 0px; 
+    animation-timing-function: cubic-bezier(0.1, 0.4, 0.9, 0.9);
+  }
+  #start4{
+    left: 50px;
+    animation-timing-function: cubic-bezier(0.1, 0.3, 0.5, 0.5);
+  }
+  #start5{
+    left: 100px;
+    animation-timing-function: cubic-bezier(0.1, 0.2, 0.1, 0.1);
+  }
+
+  @keyframes start-first {
+    35% {
+      top: -20px;
+    }
+    70% {
+      top: 20px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  .text-color {
+    color: black;
+  }
+  #nameIn {
+    position: absolute;
+    left: 25%;
+    top: 20%;
+  }
+  #mainScore{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+  }
+  #imgIconId{
+    position: fixed;
+    left: 72%;
+    top: 20%;
+  }
+  #profileH1{
+    position: absolute;
+    top: 45%;
+  }
+  #name{
+    position: absolute;
+    left: 41%;
+    top: 60%;
+    width: 300px;
+    height: 30px;
+  }
+  #loginButton{
+    position: absolute;
+    left: 45%; 
+    top: 75%;
+    width: 180px;
+    height: 30px;
+    border-radius: 5px 10px 5px 10px;
+    background: linear-gradient(#0000, gray, #ffff);
+  }
+  #loginButton:hover{
+    animation-name: button-hover;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+  }
+  #yorName{
+    font-size: 15px;
+    position: absolute;
+    left: 46%; 
+    top: 65%;
+    width: 150px;
+    height: 30px;
+  }
+  #logout{
+    position: absolute;
+    left: 45.4%; 
+    top: 80%;
+    width: 170px;
+    height: 30px;
+    border-radius: 5px 10px 5px 10px;
+    background: linear-gradient(#0000, gray, #ffff);
+  }
+  #logout:hover{
+    animation-name: button-hover;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+  }
+  #backId{
+    position: absolute;
+    left: 45.8%; 
+    top: 85%;
+    width: 160px;
+    height: 30px;
+    border-radius: 5px 10px 5px 10px;
+    background: linear-gradient(#0000, gray, #ffff);
+  }
+  #backId:hover{
+    animation-name: button-hover;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+  }
+  #changeIconId{
+    position: absolute;
+    left: 45.7%; 
+    top: 70%;
+    width: 160px;
+    height: 30px;
+    border-radius: 5px 10px 5px 10px;
+    background: linear-gradient(#0000, gray, #ffff);
+  }
+  #changeIconId:hover{
+    animation-name: button-hover;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes button-hover {
+    25% {
+      background: linear-gradient(#0000, #808080, #ffff);
+    }
+    50% {
+      background: linear-gradient(#0000,	#818589, #ffff);
+    }
+    75% {
+      background: linear-gradient(#0000,	#D3D3D3, #ffff);
+    }
+    100%{
+      background: linear-gradient(#ffff, #D3D3D3);
+    }
+  }
+  #image{
+    position: absolute;
+    border-radius: 50%;
+    top: 7%;
+    left: 46.75%;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+  }
+  .imageIcon{
+    position: absolute;
+    border-radius: 50%;
+    top: 55%;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+  }
+  #iconText{
+    position: absolute;
+    font-size: large;
+    left: 41%;
+    top: 45%;
+    width: 300px;
+    height: 30px;
+  }
+  #image1{
+    left: 27%;
+  }
+  #image2{
+    left: 47%;
+  }
+  #image3{
+    left: 67%;
+  }
+  .imageIconButton{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 75%;
+  }
+  #imageBt1{
+    left: 27%;
+  }
+  #imageBt2{
+    left: 47%;
+  }
+  #imageBt3{
+    left: 67%;
+  }

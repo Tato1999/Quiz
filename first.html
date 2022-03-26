@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="firstH1">Guess The Answer!</h1>
+      <a href="me.html"><p class="login" onclick="">Log In</p></a>
+      <h1 class="quiz" style="margin-left: 80px; font-size: xx-large">Quiz</h1>
+      </header>
+    <button class="mode-class" id="night-mod-button" onclick="darkModeClick()">
+      Dark Mode
+    </button>
+    <form>
+      <div class="content" id="contentMain">
+        <div class="content text-color" id="contentQuestion"></div>
+        <div class="answer text-color" id="firstAnswer" onclick="chekAnsClick1()">
+          asdsadasdasasda
+        </div>
+        <div class="answer text-color" id="secondAnswer" onclick="chekAnsClick2()">
+          asfsdafds
+        </div>
+        <div class="answer text-color" id="thirdAnswer" onclick="chekAnsClick3()">
+          ewtwe3
+        </div>
+        <div class="answer text-color" id="fourAnswer" onclick="chekAnsClick4()">
+          asdasdasda
+        </div>
+        <!--<input
+          type="radio"
+          class="inputStyle"
+          id="radio1"
+          name="checkAnswer"
+          value="ANS1"
+        />
+        <br />
+        <input
+          type="radio"
+          class="inputStyle"
+          id="radio2"
+          name="checkAnswer"
+          value="ANS2"
+        />
+        <br />
+        <input
+          type="radio"
+          class="inputStyle"
+          id="radio3"
+          name="checkAnswer"
+          value="ANS3"
+        />
+        <br />
+        <input
+          type="radio"
+          class="inputStyle"
+          id="radio4"
+          name="checkAnswer"
+          value="ANS4"
+        />
+        <input
+          type="button"
+          value="Submit"
+          name="Submit"
+          id="submitAnswer"
+          onclick="submitClick()"
+        />-->
+      </div>
+    </form>
+    <h4 id="nameIn">First Log In</h4>
+    <h4 id="mainScore">All point: </h4>
+    <div class="pointDiv" id="pointDivId"><p id="pointDivIdIn">0</p></div>
+    <div class="imgIcon" id="imgIconId">asdsada</div>
+    <button
+      onclick="
+    mainPointLocalClick()"
+    >
+      Submit
+    </button>
+  </body>
+</html>

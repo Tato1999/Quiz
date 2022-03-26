@@ -1,9 +1,17 @@
 <html>
   <head>
     <script src="startLocalData.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <form>
+      <header>
+        <div id="image" class="imageIcon"></div>
+        <h1>Guess The Answer!</h1>
+        <p class="login">Enjoy</p>
+        <h1 class="quiz" style="margin-left: 80px; font-size: xx-large">Quiz</h1>
+        <div class="jigo">?</div>
+      </header>
       <input type="text" id="name" neme="name" />
       <input
         type="button"
@@ -11,11 +19,13 @@
         id="loginButton"
         onclick="nameInLocal()"
       />
-      <button onclick="clearName()">log ouT</button>
-      <h1>Your Profile</h1>
-      <p id="yorName">name</p>
+      <button onclick="clearName()" id="logout">log ouT</button>
+      <h1 id="profileH1">Your Profile</h1>
+      <h1 id="nameH1">Write your Name</h1>
+      <h4 id="yorName">Hello name</h4>
       <h3 id="yorPoint"></h3>
     </form>
-    <h4><a href="index.html">go Back Game</a></h4>
+    <button id="changeIconId"><a href="changeIcon.html">Change Icon</a></button>
+    <button id="backId"><a href="index.html">go Back Game</a></button>
   </body>
 </html>
