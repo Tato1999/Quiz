@@ -4,6 +4,7 @@ var nameValueInLocal;
 var nameInDocumet;
 var nameInDocumetIn;
 var startIcon;
+var deleteClickCount;
 var changeIconValue;
 setInterval(nameInnerIn,10);
 function nameInLocal() {
@@ -27,20 +28,26 @@ function nameInnerIn() {
   }
 }
 function clearName() {
-  localStorage.removeItem('name');
+  if(sessionStorage.getItem("deleteClickCount") == undefined){
+    sessionStorage.setItem("deleteClickCount", 0);
+    alert("if U log out, u lost all data. Click again If u are accepted");
+  }else if(sessionStorage.getItem("deleteClickCount") == "0"){
+    localStorage.clear();
+    sessionStorage.removeItem("deleteClickCount");
+  }
 }
 function iconInMe(){
   changeIconValue = localStorage.getItem('setup')
   startIcon = new Image (100,100);
   startIcon.style.borderRadius = "50%";
   if(changeIconValue == null){
-    startIcon.src = 'main.PNG';
+    startIcon.src = 'main.jpg';
   } else if(changeIconValue === "1"){
-    startIcon.src = 'First.PNG';
+    startIcon.src = 'First.jpg';
   } else if(changeIconValue === "2"){
-    startIcon.src = 'Second.PNG';
+    startIcon.src = 'Second.jpg';
   } else if(changeIconValue === "3"){
-    startIcon.src = 'Third.PNG';
+    startIcon.src = 'Third.jpg';
   }
   document.getElementById('image').appendChild(startIcon);
   console.log(changeIconValue);

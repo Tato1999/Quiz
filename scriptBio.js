@@ -1,4 +1,4 @@
-  var QUESTION1 = {
+var QUESTION1 = {
     Quest: 'Which shape are the typical orbits of comets?',
     ANS1: 'Triangle',
     ANS2: 'Rectangular',

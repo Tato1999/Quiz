@@ -225,7 +225,7 @@ h1 {
     animation-timing-function: cubic-bezier(0.1, 0.2, 0.1, 0.1);
   }
 
-  /*@keyframes start-first {
+  @keyframes start-first {
     35% {
       top: -20px;
     }
@@ -235,7 +235,7 @@ h1 {
     100% {
       top: 0px;
     }
-  }*/
+  }
   .text-color {
     color: black;
   }
@@ -392,3 +392,400 @@ h1 {
   #imageBt3{
     left: 67%;
   }
+  .imageIconInGame{
+    position: absolute !important;
+    left: 70% !important;
+    top: 18% !important; 
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #pointClickId{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 39%;
+    top: 70%;
+    visibility: hidden;
+  }
+  #endMessigeId{
+    position: absolute;
+    font-size: 20px;
+    color: grey;
+    left: 39%;
+    top: 45%;
+    visibility: hidden;
+  }
+  #OverallPointId{
+    position: absolute;
+    font-size: 20px;
+    color: grey;
+    left: 39%;
+    top: 55%;
+    visibility: hidden;
+  }
+  #helpTextId{
+    position: absolute;
+    width: 303px;
+    height: 120px;
+    background: rgb(8, 8, 8);
+    margin-left: 113px;
+    margin-top: 400px;
+    border-radius: 10px;
+    text-align: center;
+    visibility: hidden;
+  }
+  .stageBtClass{
+    position: absolute;
+    left: 43.5%;
+    width: 200px;
+    height: 80px;
+    border-radius: 20px;
+    color: #eee;
+    background-color: rgba(184, 236, 210, 0.185);
+    cursor: pointer;
+    text-align: center;
+  }
+  .stageBtClassSecurity{
+    position: absolute;
+    left: 43.5%;
+    width: 200px;
+    height: 80px;
+    border-radius: 20px;
+    color: #eee;
+    background-color: rgba(184, 236, 210, 0.185);
+    cursor: pointer;
+    text-align: center;
+  }
+  .stageBtClassSecurity:hover{
+    border-radius: 5px;
+    height: 90px;
+    background-color: #eee;
+    color: #222;
+  }
+  #startStage2Security{
+    top: 57%;
+  }
+  #startStage3Security{
+    top: 69%;
+  }
+  .stageBtClass:hover{
+    border-radius: 5px;
+    height: 90px;
+    background-color: #eee;
+    color: #222;
+  }
+  #startStage1{
+    top: 45%;
+  }
+  #startStage2{
+    top: 57%;
+    visibility: hidden;
+  }
+  #startStage3{
+    visibility: hidden;
+    top: 69%;
+  }
+  #startStage4{
+    top: 81%;
+  }
+  #typePointId{
+    position: absolute;
+    top: 2rem;
+    left: 42%;
+    font-size: 16px;
+    visibility: visible;
+  }
+  .buttonp{
+    padding-top: 15%;
+  }
+  #backInSelectType{
+    width: 300px;
+    height: 40px;
+    margin-left: 113px;
+    margin-top: 400px;  
+    visibility: visible;
+    background: linear-gradient(#0000, gray, #ffff);
+  }
+  #backInSelectType:hover{
+    animation-name: button-hover;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+  }
+
+  /* რესპონსივი */
+
+  @media all and (max-width : 1490px){
+    #nameIn{
+      left: 10%;
+    }
+    #mainScore{
+      left: 10%
+    }
+    #image{
+      left: 10% !important;
+      top: 36% !important;
+    }
+    #night-mod-button{
+      left: 11.3%;
+      top: 50%;
+    }
+    #pointDivId{
+      left: 11.3%;
+      top: 60%;
+    }
+    #contentMain{
+      position: absolute;
+      left: 25%;
+    }
+    .stageBtClass, .stageBtClassSecurity{
+      left: 43%;
+     }
+  }
+  @media all and (max-width : 750px){
+    #contentMain{
+      position:absolute;
+      top: 33%;
+      left: 15%;
+    }
+    #image{
+      left: 45% !important;
+      top: 15% !important;
+    }
+    #night-mod-button{
+      left: 30%;
+      top: 15%;
+    }
+    #pointDivId{
+      left: 65%;
+      top: 15%;
+    }
+    .stageBtClass, .stageBtClassSecurity{
+      left: 35% !important;
+     }
+  }
+  @media screen and (max-width : 1000px){
+    #firstH1, .quiz{
+      font-size: 25px !important;
+    }
+    .stageBtClass, .stageBtClassSecurity{
+      left: 40%;
+     }
+  }
+  @media screen and (max-width : 770px){
+    #firstH1, .quiz{
+      font-size: 20px !important
+    }
+    .headTextClass{
+      font-size: 25px;
+    }
+    #profileH1{
+      font-size: 25px !important;
+    }
+    #nameH1{
+      font-size: 25px !important;
+    }
+    #logout{
+      left: 36%;
+    }
+    #name{
+      left: 33%;
+      width: 200px;
+    }
+    #changeIconId{
+      left: 36.7%;
+    }
+    #loginButton{
+      left: 35%;
+    }
+    #backId{
+      left: 36.8%;
+    }
+    #yorName{
+      left: 37%;
+    }
+    #iconText{
+      left: 30%;
+    }
+    #image1{
+      left: 17%;
+    }
+    #image2{
+      left: 37%;
+    }
+    #image3{
+      left: 57%;
+    }
+    #imageBt1{
+      left: 17%;
+    }
+    #imageBt2{
+      left: 37%;
+    }
+    #imageBt3{
+      left: 57%;
+    }
+  }
+  @media  screen and (max-width : 500px) {
+    #iconText{
+      font-size: 10px;
+    }
+    #image1{
+      left: 37%;
+      top: 48%;
+    }
+    #image2{
+      left: 37%;
+      top: 65%;
+    }
+    #image3{
+      left: 37%;
+      top: 82%;
+    }
+    #imageBt1{
+      left: 37%;
+      top: 61%;
+    }
+    #imageBt2{
+      left: 37%;
+      top: 78%;
+    }
+    #imageBt3{
+      left: 37%;
+      top: 94.5%;
+    }
+  }
+  @media screen and (max-width : 620px){
+    #contentMain{
+      position:absolute;
+      width: 400px;
+      height: 450px;
+    }
+    .answer {
+      position: absolute;
+      margin-left: 52px;
+    }
+    #contentQuestion {
+      margin-left: 22px;
+      width: 350px;
+    }
+    #backInSelectType{
+      margin-left: 52px;
+    }
+    #firstH1, .quiz, .login{
+      font-size: 15px !important;
+    }
+    .stageBtClass, .stageBtClassSecurity{
+      left: 30% !important;
+     }
+  }
+  @media screen and (max-width : 540px){
+    #headTextId{
+      visibility: hidden;
+    }
+    #typePointId{
+      position: absolute;
+      top: 40%;
+      left: 30%;
+    }
+  }
+  @media screen and (max-width : 350px){
+    #contentMain{
+      position:absolute;
+      left: 0%;
+      width: 100%;
+      height: 450px;
+    }
+    .answer {
+      position: absolute;
+      margin-left: 10px;
+    }
+    #contentQuestion {
+      margin-left: 5px;
+      width: 300px;
+    }
+    #backInSelectType{
+      margin-left: 10px;
+    }
+    #firstH1, .quiz, .login{
+      font-size: 15px !important;
+    }
+    #firstH1 {
+      position: absolute;
+      top: 50px !important;
+    }
+    .quiz{
+      position: absolute;
+      margin-left: 20px !important;
+    }
+    #image{
+      visibility: hidden;
+    }
+    #night-mod-button{
+      visibility: hidden;
+    }
+    #pointDivId{
+      top: 19%;
+      left: 80%;
+      width: 50px;
+      height: 50px;
+    }
+    .stageBtClass, .stageBtClassSecurity{
+      left: 20% !important;
+     }
+     #headTextId{
+       visibility: hidden;
+     }
+     #typePointId{
+       position: absolute;
+       top: 40%;
+       left: 15%;
+     }
+     #logout{
+      left: 21%;
+    }
+    #name{
+      left: 18%;
+      width: 200px;
+    }
+    #changeIconId{
+      left: 21.7%;
+    }
+    #loginButton{
+      left: 20%;
+    }
+    #backId{
+      left: 21.8%;
+    }
+    #yorName{
+      left: 22%;
+    }
+    #profileH1{
+      font-size: 15px !important;
+    }
+    #nameH1{
+      font-size: 15px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

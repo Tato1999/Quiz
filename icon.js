@@ -2,17 +2,17 @@
 var firstIcon, secondIcon, thirdIcon, setup;
 function imageInner(){
     firstIcon = new Image(100, 100);
-    firstIcon.src = 'First.png'
+    firstIcon.src = 'First.jpg'
     firstIcon.style.borderRadius = "50%";
     document.getElementById('image1').appendChild(firstIcon);
     
     secondIcon = new Image(100, 100);
-    secondIcon.src = 'Second.png'
+    secondIcon.src = 'Second.jpg'
     secondIcon.style.borderRadius = "50%";
     document.getElementById('image2').appendChild(secondIcon);
   
     thirdIcon = new Image(100, 100);
-    thirdIcon.src = 'Third.png'
+    thirdIcon.src = 'Third.jpg'
     thirdIcon.style.borderRadius = "50%";
     document.getElementById('image3').appendChild(thirdIcon);
 }

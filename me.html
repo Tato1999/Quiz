@@ -1,13 +1,23 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="startLocalData.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      @media screen and (max-width: 1150px){
+      #image{
+        position:absolute;
+        left: 45% !important;
+        top: 10% !important;
+      }
+    }
+    </style>
   </head>
   <body>
     <form>
       <header>
-        <div id="image" class="imageIcon"></div>
-        <h1>Guess The Answer!</h1>
+        <div id="image" class="imageIcon imgInME"></div>
+        <h1 id="headTextId" class="headTextClass">Guess The Answer!</h1>
         <p class="login">Enjoy</p>
         <h1 class="quiz" style="margin-left: 80px; font-size: xx-large">Quiz</h1>
         <div class="jigo">?</div>
@@ -19,13 +29,13 @@
         id="loginButton"
         onclick="nameInLocal()"
       />
-      <button onclick="clearName()" id="logout">log ouT</button>
+      <button onclick="clearName()" id="logout" title="If u logOut, U lost All Data">log ouT</button>
       <h1 id="profileH1">Your Profile</h1>
       <h1 id="nameH1">Write your Name</h1>
       <h4 id="yorName">Hello name</h4>
       <h3 id="yorPoint"></h3>
     </form>
     <button id="changeIconId"><a href="changeIcon.html">Change Icon</a></button>
-    <button id="backId"><a href="index.html">go Back Game</a></button>
+    <button id="backId"><a href="selectGameType.html">go Back Game</a></button>
   </body>
 </html>

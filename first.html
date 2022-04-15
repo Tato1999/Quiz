@@ -2,18 +2,19 @@
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="script.js"></script>
   </head>
   <body>
     <header>
       <h1 id="firstH1">Guess The Answer!</h1>
-      <a href="me.html"><p class="login" onclick="">Log In</p></a>
+      <p class="login">Enjoy</p>
       <h1 class="quiz" style="margin-left: 80px; font-size: xx-large">Quiz</h1>
       </header>
     <button class="mode-class" id="night-mod-button" onclick="darkModeClick()">
       Dark Mode
     </button>
-    <form>
+    <form id="formId">
       <div class="content" id="contentMain">
         <div class="content text-color" id="contentQuestion"></div>
         <div class="answer text-color" id="firstAnswer" onclick="chekAnsClick1()">
@@ -25,9 +26,10 @@
         <div class="answer text-color" id="thirdAnswer" onclick="chekAnsClick3()">
           ewtwe3
         </div>
-        <div class="answer text-color" id="fourAnswer" onclick="chekAnsClick4()">
+        <div class="answer text-color" id="fourAnswer" onclick="helpFunction()">
           asdasdasda
         </div>
+        <div class="helpText" id="helpTextId">adsadasd</div>
         <!--<input
           type="radio"
           class="inputStyle"
@@ -66,17 +68,24 @@
           id="submitAnswer"
           onclick="submitClick()"
         />-->
+      <a href="selectGameType.html"><div id="backInSelectType">Back</div></a>
       </div>
     </form>
     <h4 id="nameIn">First Log In</h4>
     <h4 id="mainScore">All point: </h4>
     <div class="pointDiv" id="pointDivId"><p id="pointDivIdIn">0</p></div>
-    <div class="imgIcon" id="imgIconId">asdsada</div>
-    <button
+    <div id="image" class="imageIconInGame"></div>
+    <a href="selectGameType.html">
+      <button
+    class="pointClickClass"
+    id="pointClickId"
       onclick="
     mainPointLocalClick()"
     >
       Submit
     </button>
+    </a>
+    <div class="messige" id="endMessigeId">You Earn Point:</div>
+    <div class="messige" id="OverallPointId">Overall score:</div>
   </body>
 </html>
